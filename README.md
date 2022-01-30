@@ -98,7 +98,7 @@ $ sudo tuned-adm active
 
 ##########################################################################################################################################
 
-uninstll
+uninstall
 
 1.Run the program and select "Uninstall"
 This option will remove most of the installation (not all of it) and try to backup to the existing state by timeshift. 
