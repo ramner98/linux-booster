@@ -77,6 +77,7 @@ $ sudo ./install_linux_aos.sh
 You have three options:
 
 1.Install with the excellent liquorix kernel
+
 2.Install with the default kernel of Ubuntu
 
 You will always have the option to use the tool Grub Customizer which is also installed To replace kernel
