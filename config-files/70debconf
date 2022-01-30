@@ -1,0 +1,3 @@
+// Pre-configure all packages with debconf before they are installed.
+// If you don't like it, comment it out.
+DPkg::Post-Invoke {"echo Running prelink, please wait...;/etc/cron.daily/prelink";};
