@@ -1083,10 +1083,12 @@ def aos_liquorix_commands():
 
   def profile_commands():
     pro = subprocess.run(['sudo', 'apt-get', 'install', 'profile-sync-daemon', '-y'])
+    pro2 = subprocess.run(['sudo', 'cp', 'config-files/psd.conf', '/usr/share/psd/psd.conf'])
 
     print(pro.returncode)
+    print(pro2.returncode)
 
-    if int(pro.returncode)==0:
+    if int(pro.returncode + pro2.returncode)==0:
       print("############################################################") 
       print("*       Installing profile-sync-daemon was successful      *")
       print("############################################################")
