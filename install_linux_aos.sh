@@ -8,7 +8,6 @@ chmod +x config-files/init-zram-swapping
 chmod +x scripts/memavaild_install.sh
 chmod +x scripts/perlockd_install.sh
 chmod +x scripts/ananicy-install.sh
-chmod +x scripts/psd-install.sh
 
 
 ######check for missing and broken packages and repair if necessary.
