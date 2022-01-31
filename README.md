@@ -84,6 +84,16 @@ You will always have the option to use the tool Grub Customizer which is also in
 
 #########################################################################################################################################
 
+To implement profile-sync-daemon optimizations 
+
+$ systemctl --user restart psd.service
+
+Check if it is active
+
+$ systemctl --user status psd.service
+
+#########################################################################################################################################
+
 Use tuned-adm
 
 To choose the profile that can suit your requirements
