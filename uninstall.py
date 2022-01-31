@@ -168,9 +168,9 @@ def unistallingaos_commands():
     print(pro6.returncode)
 
     if int(pro.returncode + pro2.returncode + pro3.returncode + pro4.returncode + pro5.returncode + pro6.returncode)==0:
-       print("##########################################################") 
-       print("*             unstalling aos was successful              *")
-       print("##########################################################")
+       print("############################################################") 
+       print("*             unstalling aos_ppa was successful            *")
+       print("############################################################")
        print("")
        print("the program will continue the installation process in a few seconds, please wait ...")
        time.sleep(5)
