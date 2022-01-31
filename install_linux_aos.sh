@@ -30,9 +30,9 @@ BACKTITLE=""
 TITLE="LINUX-AOS(Automatic Optimization System)"
 MENU="Choose one of the following options:"
 
-OPTIONS=(1 "1.Install with liquorix-kernel(Gives high performance to all users)"
-         2 "2.Install with ubuntu-kernel(Strong stability with drivers)"
-         3 "3.Uninstall")
+OPTIONS=(1 "Install with liquorix-kernel(Gives high performance to all users)"
+         2 "Install with ubuntu-kernel(Strong stability with drivers)"
+         3 "Uninstall")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
