@@ -1021,10 +1021,9 @@ def aos_ubuntu_commands():
 ##################################
 
   def profile_commands():
-    pro = subprocess.run(['unzip', '-o', 'dependency/profile-sync-daemon'])
-    pro2 = subprocess.run(['sudo', 'bash', 'scripts/psd-install.sh'])
+    pro = subprocess.run(['sudo', 'apt-get', 'install', 'profile-sync-daemon', '-y'])
+    pro2 = subprocess.run(['sudo', 'cp', 'config-files/psd.conf', '/usr/share/psd/psd.conf'])
 
-    
     print(pro.returncode)
     print(pro2.returncode)
 
