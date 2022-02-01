@@ -134,7 +134,7 @@ This option will return your entire system (all settings) to the state it was in
 
 Pentium processor with 1 core
 
-396 RAM memory
+396 RAM memory + 396 zram memory
 
 2 GB of swap memory on the hard disk
 
@@ -147,7 +147,7 @@ LXDE Desktop
 
 Pentium processor with 1 core
 
-768 RAM memory
+768 RAM memory + 768 zram memory
 
 4GB of swap memory on the hard disk
 
@@ -160,7 +160,7 @@ LXDE Desktop
 
 Dual core processor
 
-2048 ram memory
+2048 ram memory + 2048 zram memory
 
 8GB of swap memory on the hard disk
 
