@@ -125,6 +125,52 @@ This option will return your entire system (all settings) to the state it was in
 
 ##########################################################################################################################################
 
-Enjoy!
+#
+#
+## System requirements
+#
+
+#### Minimum requirements for office use without using a browser (there is a theoretical possibility of using an old or very minimal browser)
+
+Pentium processor with 1 core
+
+396 RAM memory
+
+2 GB of swap memory on the hard disk
+
+30 GB hard disk
+
+LXDE Desktop
 
 
+#### Minimum requirements for full office use included browser use and video viewing (recommended to use chromium but firefox can also work)
+
+Pentium processor with 1 core
+
+768 RAM memory
+
+4GB of swap memory on the hard disk
+
+30 GB hard disk
+
+LXDE Desktop
+
+
+#### Minimum requirements for performing advanced operations such as virtualization
+
+Dual core processor
+
+2048 ram memory
+
+8GB of swap memory on the hard disk
+
+128 GB hard disk
+
+LXDE or xfce desktop
+
+#### Performance may vary depending on computer hardware, GPU usage,
+Type and intensity of cooling 
+
+#########################################################################################################################################
+
+### Enjoy!
