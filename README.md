@@ -1,5 +1,5 @@
 
-LINUX-AOS (Automatic Optimization System)
+### LINUX-AOS (Automatic Optimization System)
 
 ###########################################################################################################################################
 
@@ -11,7 +11,7 @@ The concept focuses on optimizing CPU usage, dynamic-virtual-hard memories,respo
 all comes along with the option to install The excellent kernel liquorix that can upgrade you to a different label of performance or instead you can stay with Ubuntu default kernel and still enjoy great performance.
 The installer also adds the grub-customizer so you can switch between the kernels whenever you want or if necessary.
 
-It is important to clarify The installation is only for ubuntu-based distributions (this includes Mint and similar distro) and only for new and clean systems!
+It is important to clarify the installation is only for ubuntu-based distributions (this includes Mint and similar distro) and only for new and clean systems!
 This is because the installation overwrites files and settings on the system.If you still want to install On an existing distribution you will need to perform a full backup of the entire system before that!
 
 I have been using the concept for a year and to this day I have not had any problems but it is worth noting that using an advanced kernels like liquorix can sometimes have an effect on drivers
@@ -25,9 +25,9 @@ Recommends installing on a light and clean desktop like - xfce or LXDE.
 ##########################################################################################################################################
 
 
-Who is it for?
+#### Who is it for?
 
-Well...
+##### Well...
 
 1.For anyone who wants to utilize his system in a much better way.
 
@@ -49,32 +49,32 @@ And this program will definitely be able to make their lives a lot easier for th
 
 ##########################################################################################################################################
 
-install
+### install
 
 
 Open a terminal and run the following command
 
-$ sudo apt-get update
+#### $ sudo apt-get update
 
-$ sudo apt-get install git
+#### $ sudo apt-get install git
 
 Download the tool to home folder
 
-$ git clone https://github.com/ramner98/LINUX-AOS.git
+#### $ git clone https://github.com/ramner98/LINUX-AOS.git
 
-$ cd LINUX-AOS && chmod +x install_linux_aos.sh && sudo ./install_linux_aos.sh -yy
+#### $ cd LINUX-AOS && chmod +x install_linux_aos.sh && sudo ./install_linux_aos.sh -yy
 
 or
 
-$ cd LINUX-AOS
+#### $ cd LINUX-AOS
 
-$ chmod +x install_linux_aos.sh
+#### $ chmod +x install_linux_aos.sh
 
-$ sudo ./install_linux_aos.sh
+#### $ sudo ./install_linux_aos.sh
 
 ##########################################################################################################################################
 
-You have three options:
+#### You have two options:
 
 1.Install with the excellent liquorix kernel
 
@@ -84,32 +84,35 @@ You will always have the option to use the tool Grub Customizer which is also in
 
 #########################################################################################################################################
 
-To implement profile-sync-daemon optimizations 
+#### To implement profile-sync-daemon optimizations 
 
-$ systemctl --user restart psd.service
+#### $ systemctl --user restart psd.service
 
 Check if it is active
 
-$ systemctl --user status psd.service
+#### $ systemctl --user status psd.service
 
 #########################################################################################################################################
 
-Use tuned-adm
+#### Use tuned-adm
 
 To choose the profile that can suit your requirements
+
 Enter to list profiles 
 
-$ tuned-adm list
+#### $ tuned-adm list
+
 Select a profile
 
-$ sudo tuned-adm profile {profile name}
+#### $ sudo tuned-adm profile {profile name}
+
 Activate the profile
 
-$ sudo tuned-adm active
+#### $ sudo tuned-adm active
 
 ##########################################################################################################################################
 
-uninstall
+### uninstall
 
 1.Run the program and select "Uninstall"
 This option will remove most of the installation (not all of it) and try to backup to the existing state by timeshift. 
