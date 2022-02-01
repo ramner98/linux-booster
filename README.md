@@ -168,8 +168,7 @@ Dual core processor
 
 LXDE or xfce desktop
 
-#### Performance may vary depending on computer hardware, GPU usage,
-Type and intensity of cooling 
+##### Performance may vary depending on computer hardware, GPU usage,Type and intensity of cooling 
 
 #########################################################################################################################################
 
