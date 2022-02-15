@@ -7,15 +7,15 @@ This tool will download,install and optimize a concept of software and settings.
 Its purpose is to optimize the system and make it
 Work much faster while maintaining stability.
 
-The concept focuses on optimizing CPU usage, dynamic-virtual-hard memories,responsiveness,power consumption,Improving Internet usage and speed,system security and in fact the entire operating system.
-all comes along with the option to install The excellent kernel liquorix that can upgrade you to a different label of performance or instead you can stay with Ubuntu default kernel and still enjoy great performance.
+The concept focuses on optimizing CPU usage, dynamic-virtual-hard memories,responsiveness,power consumption,improving internet usage and speed,system security and in fact the entire operating system.
+All comes along with the option to install The excellent kernel liquorix that can upgrade you to a different label of performance or instead you can stay with ubuntu default kernel and still enjoy great performance.
 The installer also adds the grub-customizer so you can switch between the kernels whenever you want or if necessary.
 
-It is important to clarify the installation is only for ubuntu-based distributions (this includes Mint and similar distro) and only for new and clean systems!
+It is important to clarify the installation is only for ubuntu-based distributions (this includes mint and similar distro) and only for new and clean systems!
 This is because the installation overwrites files and settings on the system.If you still want to install On an existing distribution you will need to perform a full backup of the entire system before that!
 
-I have been using the concept for a year and to this day I have not had any problems but it is worth noting that using an advanced kernels like liquorix can sometimes have an effect on drivers
-so you have the option to perform the installation without it or replace it using grub-customizer even after installation.
+I have been using the concept for two years and to this day I have not had any problems but it is worth noting that using an advanced kernels like liquorix can sometimes have an effect on drivers
+So you have the option to perform the installation without it or replace it using grub-customizer even after installation.
 
 The tool has been tested on lts distributions 20.04 / 18.04 but should work on any ubuntu based distribution from version 18.04 LTS when the recommendation is to always use LTS versions.
 
@@ -130,37 +130,35 @@ This option will return your entire system (all settings) to the state it was in
 ## System requirements
 #
 
-#### Minimum requirements for office use without using a browser (there is a theoretical possibility of using an old or very minimal browser)
+#### Minimum requirements for office use included browser use and video viewing (Must use palemoon-browser which comes as an option during installation)
 
-Pentium processor with 1 core
+x64 processor with 1 core
 
-396 RAM memory + 396 zram memory
-
-2 GB of swap memory on the hard disk
-
-30 GB hard disk
-
-LXDE Desktop
-
-
-#### Minimum requirements for full office use included browser use and video viewing (recommended to use chromium but firefox can also work)
-
-Pentium processor with 1 core
-
-768 RAM memory + 768 zram memory
+512MB RAM memory + 512MB zram memory
 
 4GB of swap memory on the hard disk
 
-30 GB hard disk
+32GB hard disk
 
 LXDE Desktop
 
+#### Minimum requirements for full office use included browser use and video viewing (recommended to use palemoon but chromium and firefox can also work)
+
+x64 processor with 1 core
+
+768MB RAM memory + 768MB zram memory
+
+4GB of swap memory on the hard disk
+
+32 GB hard disk
+
+LXDE Desktop
 
 #### Minimum requirements for performing advanced operations such as virtualization
 
 Dual core processor
 
-2048 ram memory + 2048 zram memory
+2048MB RAM memory + 2048MB zram memory
 
 8GB of swap memory on the hard disk
 
@@ -168,8 +166,13 @@ Dual core processor
 
 LXDE or xfce desktop
 
-##### Performance may vary depending on computer hardware, GPU usage,Type and intensity of cooling 
+#
+#
+#### Note ! 
+##### For weak computers is recommended to use liquorix-kernel even if GPU drivers are not supported.
+#
+#
+##### Performance may vary depending on computer hardware, GPU usage, type and power of computer cooling components and the kernel
 
-#########################################################################################################################################
 
 ### Enjoy!
