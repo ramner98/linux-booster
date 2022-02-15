@@ -96,7 +96,7 @@ def aos_ubuntu_commands():
             print("")
             loop = input("Do you want to try to update/upgrade again? [y/n]")  
             if loop  == "y":
-              subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+              subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
               update_commands()
 
 
@@ -153,7 +153,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to Install timeshift and backup the system again? [y/n]") 
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           timeshift_commands()
 
 
@@ -202,7 +202,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to install git again? [y/n]")  
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           git_commands()
 
 
@@ -256,7 +256,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to install preload again? [y/n]")  
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           preload_commands()
 
 
@@ -314,7 +314,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Are you interested in trying to install prelink again? [y/n]") 
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           prelink_commands()
 
 
@@ -416,7 +416,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to install gnome-disk-utility again? [y/n]")  
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           disk_commands()
 
 
@@ -473,7 +473,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to install htop nohang? [y/n]")  
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           nohang_commands()
 
 
@@ -529,7 +529,7 @@ def aos_ubuntu_commands():
        print("")
        loop = input("Do you want to try to install fish shell again? [y/n]")  
        if loop  == "y":
-        subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+        subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
         fish_commands()
             
 
@@ -566,7 +566,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to installing grub-customizer again? [y/n]")  
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           customizer_commands()
 
 
@@ -778,7 +778,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to install mesa-utils again? [y/n]")  
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           mesa_commands()
 
 
@@ -882,7 +882,7 @@ def aos_ubuntu_commands():
        print("")
        loop = input("Do you want to try to install htop again? [y/n]")  
        if loop  == "y":
-        subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+        subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
         htop_commands()
 
 
@@ -937,7 +937,7 @@ def aos_ubuntu_commands():
        print("")
        loop = input("Do you want to try to install indicator-cpufreq again? [y/n]")  
        if loop  == "y":
-        subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+        subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
         indicator_commands()
 
 
@@ -1048,7 +1048,7 @@ def aos_ubuntu_commands():
       print("")
       loop = input("Do you want to try to install profile-sync-daemon again? [y/n]")  
       if loop  == "y":
-        subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+        subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
         profile_commands()
 
 
@@ -1097,7 +1097,7 @@ def aos_ubuntu_commands():
       print("")
       loop = input("Do you want to try to install irqbalance again? [y/n]")  
       if loop  == "y":
-       subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+       subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
        irqbalance_commmands()
 
 
@@ -1147,7 +1147,7 @@ def aos_ubuntu_commands():
       print("")
       loop = input("Do you want to try to install thermald again? [y/n]")  
       if loop  == "y":
-       subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+       subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
        thermald_commmands()
 
 
@@ -1197,7 +1197,7 @@ def aos_ubuntu_commands():
       print("")
       loop = input("Do you want to try to install fakeroot again? [y/n]")  
       if loop  == "y":
-       subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+       subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
        fakeroot_commmands()
 
 
@@ -1248,7 +1248,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to installing perlockd again? [y/n]")  
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           perlockd_commands()
 
 
@@ -1277,19 +1277,26 @@ def aos_ubuntu_commands():
 
   def lxde_commands():
     print("")
-    print("for very weak computers I recommend installing lxde-desktop")
+    print("for very weak computers I recommend installing lxde-desktop + palemoon-browser")
     print("and after the installation is done login to lxde and consider removing")
     print("the previous desktop.")
     print("")
-    time.sleep(3)
-    lxde = input("Do you want to install lxde-desktop ? [y/n]")  
+    print("Note !")
+    print("If you have 2gb ram or more in the system")
+    print("you do not have to perform this part")
+    print("")
+    time.sleep(1)
+
+    lxde = input("Do you want to install lxde-desktop && palemoon-browser ? [y/n] ")  
     if lxde  == "y":
+      
+      def lxdein_commands():
+        
+       pro = subprocess.run(['sudo', 'apt-get', 'install', 'lxde', '-y'])
 
-        pro = subprocess.run(['sudo', 'apt-get', 'install', 'lxde', '-y'])
+       print(pro.returncode)
 
-        print(pro.returncode)
-
-        if int(pro.returncode)==0:
+       if int(pro.returncode)==0:
           print("#############################################################") 
           print("*          Installing lxde-desktop was successful           *")
           print("#############################################################")
@@ -1297,17 +1304,17 @@ def aos_ubuntu_commands():
           print("the program will continue the installation process in a few seconds, please wait ...")  
           time.sleep(3)
 
-        else:
+       else:
 
           print("#############################################################################") 
           print("*                warning: Installing lxde-desktop was failed                *")
           print("#############################################################################")
           time.sleep(3)
           print("")
-          loop = input("Do you want to try to Installing lxde-desktop ? [y/n]")  
+          loop = input("Do you want to try to Installing lxde-desktop again ? [y/n]")  
           if loop  == "y":
-           subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y']) 
-           lxde_commands() 
+           subprocess.run(['sudo', 'bash', 'scripts/fix.sh']) 
+           lxdein_commands() 
 
 
           else:
@@ -1318,6 +1325,168 @@ def aos_ubuntu_commands():
              time.sleep(3)
              print("")
       
+
+      lxdein_commands()  
+
+            
+      time.sleep(1)
+
+      print("")
+      print("To install palemoon-browser properly the program needs to know") 
+      print("what version of ubuntu are you using...")
+      print("")
+      print("Enter [1] for ubuntu-lts 20.04")  
+      print("Enter [2] for ubuntu-lts 18.04")
+
+      retls = input("select an option: ")
+      if retls  == "1":
+
+       def retls1commands():
+
+        
+        
+        pro = subprocess.run(['sudo', 'apt-get', 'install', 'curl', '-y'])
+        pro2 = subprocess.run("echo 'deb http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:stevenpusser.list" ,shell=True)
+        pro3 = subprocess.run("curl -fsSL https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_20.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_stevenpusser.gpg > /dev/null" ,shell=True)
+        pro4 = subprocess.run(['sudo', 'apt-get', 'update'])
+        pro5 = subprocess.run(['sudo', 'apt-get', 'install', 'palemoon', '-y'])
+
+
+        print(pro.returncode)
+        print(pro2.returncode)
+        print(pro3.returncode)
+        print(pro4.returncode)
+        print(pro5.returncode)
+        
+
+        if int(pro.returncode + pro2.returncode + pro3.returncode + pro4.returncode + pro5.returncode)==0:
+          print("#############################################################") 
+          print("*        Installing palemoon-browser was successful         *")
+          print("#############################################################")
+          print("")
+          print("the program will continue the installation process in a few seconds, please wait ...")  
+          time.sleep(3)
+
+        else:
+
+          print("#############################################################################") 
+          print("*              warning: Installing palemoon-browser was failed              *")
+          print("#############################################################################")
+          time.sleep(3)
+          print("")
+          loop = input("Do you want to try to Installing palemoon-browser again ? [y/n]")  
+          if loop  == "y":
+           subprocess.run(['sudo', 'bash', 'scripts/fix.sh']) 
+           retls1commands() 
+
+
+          else:
+           
+             print("##############################################################################") 
+             print("*              warning: Installing palemoon-browser was failed               *")
+             print("##############################################################################")
+             time.sleep(3)
+             print("")
+
+       retls1commands()
+       
+      if retls  == "2":
+        
+       def retls2command():
+
+        pro = subprocess.run(['sudo', 'apt-get', 'install', 'curl', '-y'])
+        pro2 = subprocess.run("echo 'deb http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_18.04/ /' | sudo tee /etc/apt/sources.list.d/home:stevenpusser.list" ,shell=True)
+        pro3 = subprocess.run("curl -fsSL https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_18.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_stevenpusser.gpg > /dev/null" ,shell=True)
+        pro4 = subprocess.run(['sudo', 'apt-get', 'update'])
+        pro5 = subprocess.run(['sudo', 'apt-get', 'install', 'palemoon', '-y'])
+
+
+        print(pro.returncode)
+        print(pro2.returncode)
+        print(pro3.returncode)
+        print(pro4.returncode)
+        print(pro5.returncode)
+        
+
+        if int(pro.returncode + pro2.returncode + pro3.returncode + pro4.returncode + pro5.returncode)==0:
+          print("#############################################################") 
+          print("*        Installing palemoon-browser was successful         *")
+          print("#############################################################")
+          print("")
+          print("the program will continue the installation process in a few seconds, please wait ...")  
+          time.sleep(3)
+
+        else:
+
+          print("#############################################################################") 
+          print("*             warning: Installing palemoon-browser was failed               *")
+          print("#############################################################################")
+          time.sleep(3)
+          print("")
+          loop = input("Do you want to try to Installing palemoon-browser again ? [y/n]")  
+          if loop  == "y":
+           subprocess.run(['sudo', 'bash', 'scripts/fix.sh']) 
+           retls2command() 
+
+
+          else:
+           
+             print("##############################################################################") 
+             print("*              warning: Installing palemoon-browser was failed               *")
+             print("##############################################################################")
+             time.sleep(3)
+             print("")
+      
+       retls2command()
+
+
+##### To improve performance on systems with very small resources the program will remove unnecessary packages 
+
+      def unpa_commands():
+        pro = subprocess.run(['sudo', 'rm', '-rf', '/var/cache/snapd/'])
+        pro2 = subprocess.run(['sudo', 'apt-get', 'autoremove', '--purge', 'snapd', 'gnome-software-plugin-snap', '-y'])
+        pro3 = subprocess.run("rm -fr ~/snap" ,shell=True)
+        pro4 = subprocess.run(['sudo', 'apt-get', 'remove', 'bluez', '-y'])
+        pro5 = subprocess.run(['sudo', 'apt-get', 'purge', 'bluez', '-y'])
+        pro6 = subprocess.run(['sudo', 'apt-get', 'remove', 'xscreensaver', '-y'])
+        pro7 = subprocess.run(['sudo', 'apt-get', 'purge', 'xscreensaver', '-y'])
+        pro8 = subprocess.run(['sudo', 'apt-get', 'remove', 'clipit', '-y'])
+        pro9 = subprocess.run(['sudo', 'apt-get', 'purge', 'clipit', '-y'])
+
+
+        print(pro.returncode)
+        print(pro2.returncode)
+        print(pro3.returncode)
+        print(pro4.returncode)
+        print(pro5.returncode)
+        print(pro6.returncode)
+        print(pro7.returncode)
+        print(pro8.returncode)
+        print(pro9.returncode)
+
+        if int(pro.returncode + pro2.returncode + pro3.returncode + pro4.returncode + pro5.returncode + pro6.returncode +
+           pro7.returncode + pro8.returncode + pro9.returncode)==0:
+          print("##########################################################") 
+          print("*       remove unnecessary packages was successful       *")
+          print("##########################################################")
+          print("")
+          print("the program will continue the installation process in a few seconds, please wait ...")
+          time.sleep(3)
+
+        else:
+
+          print("##############################################################################") 
+          print("*               warning: remove unnecessary packages was failed              *")
+          print("##############################################################################")
+          time.sleep(3)
+          print("")
+          print("")
+          loop = input("Do you want to try to removing unnecessary packages again ? [y/n]")  
+          if loop  == "y":
+            subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
+            unpa_commands()
+
+      unpa_commands()
 
   lxde_commands()  
 
@@ -1402,7 +1571,7 @@ def aos_ubuntu_commands():
        print("")
        loop = input("Do you want to try to install synaptic again? [y/n]")  
        if loop  == "y":
-        subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+        subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
         synaptic_commands()
 
 
@@ -1456,7 +1625,7 @@ def aos_ubuntu_commands():
        print("")
        loop = input("Do you want to try to repeat update again? [y/n]")  
        if loop  == "y":
-        subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+        subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
         ru_commands()
 
 
@@ -1509,7 +1678,7 @@ def aos_ubuntu_commands():
        print("")
        loop = input("Do you want to try to install zram-config again? [y/n]")  
        if loop  == "y":
-        subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+        subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
         zram_commands()
 
 
@@ -1542,9 +1711,9 @@ def aos_ubuntu_commands():
     pro2 = subprocess.run(['sudo', 'systemctl', 'enable', 'tlp.service'])
     pro3 = subprocess.run(['sudo', 'systemctl', 'mask', 'systemd-rfkill.service'])
     pro4 = subprocess.run(['sudo', 'systemctl', 'mask', 'systemd-rfkill.socket'])
-    pro5 = subprocess.run(['sudo', 'add-apt-repository', 'ppa:linuxuprising/apps', '-yy'])
-    pro6 = subprocess.run(['sudo', 'apt-get', 'update'])
-    pro7 = subprocess.run(['sudo', 'apt-get', 'install', 'tlpui', '-y'])
+    pro5 = subprocess.run(['sudo', 'apt-get', 'install', 'python3-gi', 'python3-setuptools', 'python3-stdeb', 'dh-python', 'python-all', '-y'])
+    pro6 = subprocess.run(['unzip', '-o', 'dependency/TLPUI'])
+    pro7 = subprocess.run(['sudo', 'bash', 'scripts/tlpui_install.sh'])
     pro8 = subprocess.run(['sudo', 'cp', 'config-files/tlp.conf', '/etc/tlp.conf'])
 
     print(pro.returncode)
@@ -1579,7 +1748,7 @@ def aos_ubuntu_commands():
        print("")
        loop = input("Do you want to try to install tlp again? [y/n]")  
        if loop  == "y":
-        subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+        subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
         tlp_commands()
 
 
@@ -1608,10 +1777,12 @@ def aos_ubuntu_commands():
 
   def ioscheduler_commands():
     pro = subprocess.run(['sudo', 'cp', 'config-files/60-ioschedulers.rules', '/etc/udev/rules.d/'])
+    pro2 = subprocess.run(['udevadm', 'control', '--reload'])
 
     print(pro.returncode)
+    print(pro2.returncode)
 
-    if int(pro.returncode)==0:
+    if int(pro.returncode + pro2.returncode)==0:
         print("########################################################") 
         print("*       Optimizing I/O scheduler was successful        *")
         print("########################################################")
@@ -1678,7 +1849,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to installing memavaild again? [y/n]")  
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           memavaild_commands()
 
 
@@ -1736,7 +1907,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to installing tuned-adm again? [y/n]")  
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           tuned_commands()
 
 
@@ -1773,8 +1944,8 @@ def aos_ubuntu_commands():
     print(pro3.returncode)
 
     if int(pro.returncode + pro2.returncode + pro3.returncode)==0:
-        print("########################################################") 
-        print("*          Installing fail2ban was successful          *")
+        print("########################################################")
+        print("*       Installing/enable fail2ban was successful      *")
         print("########################################################")
         print("")
         print("the program will continue the installation process in a few seconds, please wait ...")
@@ -1793,7 +1964,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to installing fail2ban again? [y/n]")  
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           fail2ban_commands()
 
 
@@ -1853,7 +2024,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to install gufw again? [y/n]")  
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           ufw_commands()
 
 
@@ -1904,6 +2075,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to installing ananicy again? [y/n]")  
         if loop  == "y":
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           ananicy_commands()
 
 
@@ -1962,7 +2134,7 @@ def aos_ubuntu_commands():
         print("")
         loop = input("Do you want to try to installing chromium again? [y/n]")  
         if loop  == "y":
-          subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
           chromium_commands()
 
 
@@ -1990,7 +2162,7 @@ def aos_ubuntu_commands():
     pro2 = subprocess.run(['sudo', 'apt-get', 'auto-remove', '-y'])
 
     print(pro.returncode)
-    print(pro.returncode)
+    print(pro2.returncode)
 
     if int(pro.returncode + pro2.returncode)==0:
        print("###########################################################") 
@@ -2010,7 +2182,7 @@ def aos_ubuntu_commands():
        print("")
        loop = input("Do you want to try to autoclean && autoremove again? [y/n]")  
        if loop  == "y":
-        subprocess.run(['sudo', 'apt-get', '--fix-broken', 'install', '-y'])
+        subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
         autoclean_commands()
             
 
@@ -2021,4 +2193,123 @@ def aos_ubuntu_commands():
 ##############################################################################################################################
 
 
+#############################
+#   Apparmor optimization   #
+#############################
+
+
+  def apparmor_commands():
+   print("")
+   print("For advanced users there is the option to enable apparmor in enforce mode and add profiles and utils")
+   print("")
+   print("This option is not required for regular users,except for those who need a high level of security.")
+   print("You can get an explanation of how to use and manage the tool in the following link.")
+   print("")
+   print("https://linuxhint.com/apparmor-profiles-ubuntu")
+   print("")
+   print("If you select this option the system will try to create a backup using timeshift called 'return-apparmor' ")
+   print("That way you can go back to the state you were before enabled apparmor")
+   print("")
+   print("You also have the option to change the apparmor profile to 'complain mode' by < sudo aa-complain /etc/apparmor.d/* > ")
+   print("")
+   print("to disable apparmor manually from the terminal go to grub <sudo nano /etc/default/grub>")
+   print("to line 'GRUB_CMDLINE_LINUX_DEFAULT=' ")
+   print("change <apparmor=1> to <apparmor=0> save the file")
+   print("go to trminall again and update-grub <sudo upadte-grub> after this reboot your system")
+   print("")
+   time.sleep(3)
+
+   apparmor = input("Do you want to enable apparmor in enforce mode and install useful apparmor utilities ? [y/n] ")  
+   if apparmor  == "y":
+        
+        def timeshift_create():
+            pro = subprocess.run(['sudo', 'timeshift', '--create', '--comments', 'return-apparmor'])
+            
+            print(pro.returncode)
+
+            if int(pro.returncode)==0:
+             print("#################################################")
+             print(" timeshift_return-apparmor_backup was successful ")
+             print("#################################################") 
+             time.sleep(3)
+            
+            else:
+
+                print("##################################################################") 
+                print("*      warning: timeshift_return-apparmor_backup was failed      *")
+                print("##################################################################")
+                print("")
+                time.sleep(3)
+                
+                loop = input("Do you want to try to backup again? [y/n]")  
+                if loop  == "y":
+                 subprocess.run(['sudo', 'bash', 'scripts/fix.sh']) 
+                 timeshift_create()
+                
+                else:
+
+                 without = input("Do you want to continue without create timeshift_return-apparmor_backup ? [y/n] ")
+                 if without == "n":
+                  exit()
+
+        timeshift_create()     
+
+        def enable_apparmot():
+
+            pro2 = subprocess.run(['sudo', 'bash', 'scripts/apparmor_enable.sh'])
+            pro3 = subprocess.run(['sudo', 'apt-get', 'install', 'apparmor-easyprof', 'apparmor-notify', 'apparmor-utils', 'certspotter', '-y'])
+            pro4 = subprocess.run(['sudo', 'update-grub'])
+            pro5 = subprocess.run("sudo aa-enforce /etc/apparmor.d/*" ,shell=True)      
+            
+            print(pro2.returncode)
+            print(pro3.returncode)
+            print(pro4.returncode)
+            print(pro5.returncode)
+
+            if int(pro2.returncode + pro3.returncode + pro4.returncode + pro5.returncode)==0:
+                print("####################################################################") 
+                print("* successful enable apparmor and install useful apparmor utilities *")
+                print("####################################################################")
+                print("")
+                print("the program will continue the installation process in a few seconds, please wait ...")  
+                time.sleep(3)
+            else:
+
+                print("############################################################################") 
+                print("* warning: failed to enable apparmor and install useful apparmor utilities *")
+                print("############################################################################")
+                time.sleep(3)
+                print("")
+                loop = input("Do you want to try again? [y/n]")  
+                if loop  == "y":
+                 subprocess.run(['sudo', 'bash', 'scripts/fix.sh']) 
+                 enable_apparmot() 
+
+
+                else:
+                
+                    print("################################################################################") 
+                    print("*   warning: failed to enable apparmor and install useful apparmor utilities   *")
+                    print("################################################################################")
+                    time.sleep(3)
+                    print("")
+            
+
+        enable_apparmot()  
+
+
+  apparmor_commands()
+
+##############################################################################################################################
+##############################################################################################################################
+
 aos_ubuntu_commands()
+
+
+print("")
+print("For more details")
+print("#########################################")
+print("https://github.com/ramner98/LINUX-AOS.git")
+print("#########################################")
+time.sleep(3)
+print("")
