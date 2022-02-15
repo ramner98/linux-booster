@@ -8,30 +8,55 @@ chmod +x config-files/init-zram-swapping
 chmod +x scripts/memavaild_install.sh
 chmod +x scripts/perlockd_install.sh
 chmod +x scripts/ananicy-install.sh
+chmod +x scripts/apparmor_enable.sh
+chmod +x scripts/fix.sh
+chmod +x scripts/tlpui_install.sh
+chmod +x scripts/apparmor_disable.sh
 
 
-######check for missing and broken packages and repair if necessary.
+### *Prepare the system for installation* ###
+
+##### The program will perform necessary
+##### Steps to ensure the success of the installation 
+
+##### fix error ("`Could not get lock /var") if it exists.
+sudo rm -rf /var/lib/apt/lists/lock
+sudo rm -rf /var/lib/apt/lists/lock-frontend
+sudo rm -rf /var/cache/apt/archives/lock
+sudo rm -rf /var/lib/dpkg/lock
+sudo dpkg --configure -a
+sudo apt install -f
+######
+
+###### check for missing and broken packages and repair if necessary.
 sudo apt-get --fix-broken install -y
 sudo apt-get update --fix-missing
 sudo dpkg --configure -a
 sudo apt-get install -f
-######check if python3.8 is installed
+######
+
+###### check if python3.8 is installed
 sudo apt-get install python3.8 -y 
 ######
+
+###### install make
 sudo apt-get install make
 ######
+
+###### install dialog
 sudo apt-get install dialog
+######
 
 HEIGHT=15
 WIDTH=76
 CHOICE_HEIGHT=4
-BACKTITLE=""
+BACKTITLE="https://github.com/ramner98/LINUX-AOS.git"
 TITLE="LINUX-AOS(Automatic Optimization System)"
 MENU="Choose one of the following options:"
 
-OPTIONS=(1 "Install with liquorix-kernel(Gives high performance to all users)"
-         2 "Install with ubuntu-kernel(Strong stability with drivers)"
-         3 "Uninstall")
+OPTIONS=(1 "liquorix-installer(high performance to all types of users)"
+         2 "ubuntu-installer(high stability drivers/option apparmor enforce)"
+         3 "uninstall")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
