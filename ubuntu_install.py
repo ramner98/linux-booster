@@ -2200,7 +2200,7 @@ def aos_ubuntu_commands():
 
   def apparmor_commands():
    print("")
-   print("For advanced users there is the option to enable apparmor in enforce mode and add profiles and utils")
+   print("For advanced users there is the option to enable apparmor in enforce mode and add profiles and utilities")
    print("")
    print("This option is not required for regular users,except for those who need a high level of security.")
    print("You can get an explanation of how to use and manage the tool in the following link.")
