@@ -172,7 +172,7 @@ LXDE or xfce desktop
 ##### For weak computers is recommended to use liquorix-kernel even if GPU drivers are not supported.
 #
 #
-##### Performance may vary depending on computer hardware, GPU usage, type and power of computer cooling components and the kernel
+##### Performance may vary depending on computer hardware,kernel,GPU usage,type and power of computer cooling components.
 
 
 ### Enjoy!
