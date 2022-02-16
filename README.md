@@ -78,7 +78,7 @@ or
 
 1.Install with the excellent liquorix kernel
 
-2.Install with the default kernel of Ubuntu
+2.Install with the default kernel of ubuntu
 
 You will always have the option to use the tool Grub Customizer which is also installed To replace kernel
 
@@ -120,8 +120,8 @@ This option will remove most of the installation (not all of it) and try to back
 2.While installing the program, the program will try to perform a backup using a timeshift named
 "linux-aos-uninstall". You can select this option to return to the state you were in before installing the program.
 
-Warning !!
-This option will return your entire system (all settings) to the state it was in before installation. 
+#### Warning !!
+#### This option will return your entire system (all settings) to the state it was in before installation. 
 
 ##########################################################################################################################################
 
