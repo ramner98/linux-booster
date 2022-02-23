@@ -2257,7 +2257,8 @@ def aos_ubuntu_commands():
         def enable_apparmot():
 
             pro2 = subprocess.run(['sudo', 'bash', 'scripts/apparmor_enable.sh'])
-            pro3 = subprocess.run(['sudo', 'apt-get', 'install', 'apparmor-easyprof', 'apparmor-notify', 'apparmor-utils', 'certspotter', '-y'])
+            pro3 = subprocess.run(['sudo', 'apt-get', 'install', 'apparmor-profiles', 'apparmor-profiles-extra',
+            'apparmor-easyprof', 'apparmor-notify', 'apparmor-utils', 'certspotter', 'auditd', '-y'])
             pro4 = subprocess.run(['sudo', 'update-grub'])
             pro5 = subprocess.run("sudo aa-enforce /etc/apparmor.d/*" ,shell=True)      
             
@@ -2267,9 +2268,9 @@ def aos_ubuntu_commands():
             print(pro5.returncode)
 
             if int(pro2.returncode + pro3.returncode + pro4.returncode + pro5.returncode)==0:
-                print("####################################################################") 
-                print("* successful enable apparmor and install useful apparmor utilities *")
-                print("####################################################################")
+                print("#############################################################################") 
+                print("* apparmor optimization and installation of useful utilities was successful *")
+                print("#############################################################################")
                 print("")
                 print("the program will continue the installation process in a few seconds, please wait ...")  
                 time.sleep(3)
@@ -2299,6 +2300,7 @@ def aos_ubuntu_commands():
 
 
   apparmor_commands()
+
 
 ##############################################################################################################################
 ##############################################################################################################################
