@@ -130,7 +130,7 @@ This option will remove most of the installation (not all of it) and try to back
 ## System requirements
 #
 
-#### Minimum requirements for office use included browser use and video viewing (Must use palemoon-browser which comes as an option during installation)
+#### Minimum requirements for office use included browser use and video viewing
 
 x64 processor with 1 core
 
@@ -142,7 +142,7 @@ x64 processor with 1 core
 
 LXDE Desktop
 
-#### Minimum requirements for full office use included browser use and video viewing (recommended to use palemoon but chromium and firefox can also work)
+#### Minimum requirements for full office use included browser use and video viewing
 
 x64 processor with 1 core
 
@@ -156,7 +156,7 @@ LXDE Desktop
 
 #### Minimum requirements for performing advanced operations such as virtualization
 
-Dual core processor
+x64 processor with 1 core
 
 2048MB RAM memory + 2048MB zram memory
 
