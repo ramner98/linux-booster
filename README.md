@@ -25,30 +25,6 @@ Recommends installing on a light and clean desktop like - xfce or LXDE.
 ##########################################################################################################################################
 
 
-#### Who is it for?
-
-##### Well...
-
-1.For anyone who wants to utilize his system in a much better way.
-
-2.For people or companies who want to avoid upgrading computers at home or in business to newer
-computers and thus save money and get better performance and a higher level of security. 
-
-3.Anyone who wants to preserve the environment, this is because reusing old computers (recycling) can prevent overproduction of new computers,
-reduce the dumping of old computers in the trash and thus helps a lot in preserving the environment.
-
-4.Graphic artists or gamers on Linux systems (a topic that is starting to gain increasing popularity in recent years).
-
-5.Code developers,ethical hackers,devops, or scientists who need a large number of virtual machines to learn or experiment.
-
-But the most important reason for me is
-To provide a technological solution to people living in Third World countries like many countries in Asia and Africa.
-In these places whoever gets to own a computer will usually get a weak, average or old computer,
-And this program will definitely be able to make their lives a lot easier for the reason that they can get a lot more out of their system.
-
-
-##########################################################################################################################################
-
 ### install
 
 
