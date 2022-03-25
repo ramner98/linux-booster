@@ -1277,7 +1277,7 @@ def aos_ubuntu_commands():
 
   def lxde_commands():
     print("")
-    print("for very weak computers I recommend installing lxde-desktop + palemoon-browser")
+    print("for very weak computers I recommend installing lxde-desktop")
     print("and after the installation is done login to lxde and consider removing")
     print("the previous desktop.")
     print("")
@@ -1287,7 +1287,7 @@ def aos_ubuntu_commands():
     print("")
     time.sleep(1)
 
-    lxde = input("Do you want to install lxde-desktop && palemoon-browser ? [y/n] ")  
+    lxde = input("Do you want to install lxde-desktop ? [y/n] ")  
     if lxde  == "y":
       
       def lxdein_commands():
@@ -1326,119 +1326,7 @@ def aos_ubuntu_commands():
              print("")
       
 
-      lxdein_commands()  
-
-            
-      time.sleep(1)
-
-      print("")
-      print("To install palemoon-browser properly the program needs to know") 
-      print("what version of ubuntu are you using...")
-      print("")
-      print("Enter [1] for ubuntu-lts 20.04")  
-      print("Enter [2] for ubuntu-lts 18.04")
-
-      retls = input("select an option: ")
-      if retls  == "1":
-
-       def retls1commands():
-
-        
-        
-        pro = subprocess.run(['sudo', 'apt-get', 'install', 'curl', '-y'])
-        pro2 = subprocess.run("echo 'deb http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:stevenpusser.list" ,shell=True)
-        pro3 = subprocess.run("curl -fsSL https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_20.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_stevenpusser.gpg > /dev/null" ,shell=True)
-        pro4 = subprocess.run(['sudo', 'apt-get', 'update'])
-        pro5 = subprocess.run(['sudo', 'apt-get', 'install', 'palemoon', '-y'])
-
-
-        print(pro.returncode)
-        print(pro2.returncode)
-        print(pro3.returncode)
-        print(pro4.returncode)
-        print(pro5.returncode)
-        
-
-        if int(pro.returncode + pro2.returncode + pro3.returncode + pro4.returncode + pro5.returncode)==0:
-          print("#############################################################") 
-          print("*        Installing palemoon-browser was successful         *")
-          print("#############################################################")
-          print("")
-          print("the program will continue the installation process in a few seconds, please wait ...")  
-          time.sleep(3)
-
-        else:
-
-          print("#############################################################################") 
-          print("*              warning: Installing palemoon-browser was failed              *")
-          print("#############################################################################")
-          time.sleep(3)
-          print("")
-          loop = input("Do you want to try to Installing palemoon-browser again ? [y/n]")  
-          if loop  == "y":
-           subprocess.run(['sudo', 'bash', 'scripts/fix.sh']) 
-           retls1commands() 
-
-
-          else:
-           
-             print("##############################################################################") 
-             print("*              warning: Installing palemoon-browser was failed               *")
-             print("##############################################################################")
-             time.sleep(3)
-             print("")
-
-       retls1commands()
-       
-      if retls  == "2":
-        
-       def retls2command():
-
-        pro = subprocess.run(['sudo', 'apt-get', 'install', 'curl', '-y'])
-        pro2 = subprocess.run("echo 'deb http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_18.04/ /' | sudo tee /etc/apt/sources.list.d/home:stevenpusser.list" ,shell=True)
-        pro3 = subprocess.run("curl -fsSL https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_18.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_stevenpusser.gpg > /dev/null" ,shell=True)
-        pro4 = subprocess.run(['sudo', 'apt-get', 'update'])
-        pro5 = subprocess.run(['sudo', 'apt-get', 'install', 'palemoon', '-y'])
-
-
-        print(pro.returncode)
-        print(pro2.returncode)
-        print(pro3.returncode)
-        print(pro4.returncode)
-        print(pro5.returncode)
-        
-
-        if int(pro.returncode + pro2.returncode + pro3.returncode + pro4.returncode + pro5.returncode)==0:
-          print("#############################################################") 
-          print("*        Installing palemoon-browser was successful         *")
-          print("#############################################################")
-          print("")
-          print("the program will continue the installation process in a few seconds, please wait ...")  
-          time.sleep(3)
-
-        else:
-
-          print("#############################################################################") 
-          print("*             warning: Installing palemoon-browser was failed               *")
-          print("#############################################################################")
-          time.sleep(3)
-          print("")
-          loop = input("Do you want to try to Installing palemoon-browser again ? [y/n]")  
-          if loop  == "y":
-           subprocess.run(['sudo', 'bash', 'scripts/fix.sh']) 
-           retls2command() 
-
-
-          else:
-           
-             print("##############################################################################") 
-             print("*              warning: Installing palemoon-browser was failed               *")
-             print("##############################################################################")
-             time.sleep(3)
-             print("")
-      
-       retls2command()
-
+      lxdein_commands() 
 
 ##### To improve performance on systems with very small resources the program will remove unnecessary packages 
 
