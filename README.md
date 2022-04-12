@@ -1,5 +1,4 @@
 
-### LINUX-AOS (Automatic Optimization System)
 
 ###########################################################################################################################################
 
@@ -38,11 +37,11 @@ Download the tool to home folder
 
 #### $ git clone https://github.com/ramner98/LINUX-AOS.git
 
-#### $ cd LINUX-AOS && chmod +x install_linux_aos.sh && sudo ./install_linux_aos.sh -yy
+#### $ cd linux-booster && chmod +x install_linux_aos.sh && sudo ./install_linux_aos.sh -yy
 
 or
 
-#### $ cd LINUX-AOS
+#### $ cd linux-booster
 
 #### $ chmod +x install_linux_aos.sh
 
