@@ -50,8 +50,8 @@ sudo apt-get install dialog
 HEIGHT=15
 WIDTH=76
 CHOICE_HEIGHT=4
-BACKTITLE="https://github.com/ramner98/LINUX-AOS.git"
-TITLE="LINUX-AOS(Automatic Optimization System)"
+BACKTITLE="https://github.com/ramner98/linux-booster.git"
+TITLE="linux-booster"
 MENU="Choose one of the following options:"
 
 OPTIONS=(1 "liquorix-installer(high performance to all types of users)"
