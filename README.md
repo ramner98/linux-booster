@@ -35,7 +35,7 @@ Open a terminal and run the following command
 
 Download the tool to home folder
 
-#### $ git clone https://github.com/ramner98/LINUX-AOS.git
+#### $ git clone https://github.com/ramner98/linux-booster.git
 
 #### $ cd linux-booster && chmod +x install_linux_aos.sh && sudo ./install_linux_aos.sh -yy
 
