@@ -602,13 +602,18 @@ def aos_liquorix_commands():
 # Installation grub-customizer #
 ################################
 
-
   def customizer_commands():
-    pro = subprocess.run(['sudo', 'apt-get', 'install', 'grub-customizer', '-y'])
+    
+    pro = subprocess.run(['sudo', 'add-apt-repository', 'ppa:trebelnik-stefina/grub-customizer', '-yy'])
+    pro1 = subprocess.run(['sudo', 'apt-get', 'update', '-y'])
+    pro2 = subprocess.run(['sudo', 'apt-get', 'install', 'grub-customizer', '-y'])
 
     print(pro.returncode)
+    print(pro1.returncode)
+    print(pro2.returncode)
 
-    if int(pro.returncode)==0:
+
+    if int(pro.returncode + pro1.returncode + pro2.returncode)==0:
         print("#########################################################") 
         print("*      Installation grub-customizer was successful      *")
         print("#########################################################")
@@ -810,7 +815,7 @@ def aos_liquorix_commands():
 
 
   def mesa_commands():
-    pro = subprocess.run(['sudo', 'apt-get', 'install', 'mesa-utils'])
+    pro = subprocess.run(['sudo', 'apt-get', 'install', 'mesa-utils', '-y'])
     pro2 = subprocess.run(['sudo', 'apt-get', 'install', 'mesa-utils-extra', '-y'])
 
     print(pro.returncode)
@@ -1013,64 +1018,6 @@ def aos_liquorix_commands():
             
 
   indicator_commands()
-
-##############################################################################################################################
-##############################################################################################################################
-
-
-################################################
-# Remove ubuntu reports and popularity-contest #
-################################################
-
-
-  def remove_re_commands():
-    print("")
-    print("remove ubuntu reports and popularity-contest ? ")
-    print("")
-    print("These tools help Ubuntu developers get anonymous information(according to ubuntu developers)")
-    print("about system usage and bug fixes to improve distribution usage and create necessary updates.")
-    print("The use of these tools depends on your choice.")
-    print("")
-    time.sleep(3)
-    remove = input("Are you interested to remove ubuntu reports and popularity-contest? [y/n]")  
-    if remove  == "y":
-
-        pro = subprocess.run(['sudo', 'apt-get', 'remove', 'ubuntu-report', 'popularity-contest', 'apport', 'whoopsie', '-y'])
-        pro2 = subprocess.run(['sudo', 'apt-get', 'purge', 'ubuntu-report', 'popularity-contest', 'apport', 'whoopsie', '-y'])
-
-        print(pro.returncode)
-        print(pro2.returncode)
-
-        if int(pro.returncode + pro2.returncode)==0:
-          print("#############################################################") 
-          print("*remove ubuntu reports and popularity-contest was successful*")
-          print("#############################################################")
-          print("")
-          print("the program will continue the installation process in a few seconds, please wait ...")  
-          time.sleep(3)
-        else:
-
-          print("##############################################################################") 
-          print("*      warning: remove ubuntu reports and popularity-contest was failed      *")
-          print("##############################################################################")
-          time.sleep(3)
-          print("")
-          loop = input("Do you want to try to remove ubuntu reports and popularity-contest again? [y/n]")  
-          if loop  == "y":
-           subprocess.run(['sudo', 'bash', 'scripts/fix.sh']) 
-           remove_re_commands() 
-
-
-          else:
-           
-             print("##############################################################################") 
-             print("*        warning: remove ubuntu reports and popularity-contest failed        *")
-             print("##############################################################################")
-             time.sleep(3)
-             print("")
-      
-
-  remove_re_commands()  
 
 
 ##############################################################################################################################
@@ -1450,22 +1397,18 @@ def aos_liquorix_commands():
 
 
   def unnecessary_commands():
-    pro = subprocess.run(['sudo', 'apt-get', 'remove', 'update-notifier', '-y'])
-    pro2 = subprocess.run(['sudo', 'apt-get', 'purge', 'update-notifier', '-y'])
     pro3 = subprocess.run(['sudo', 'apt-get', 'remove', 'thunderbird', '-y'])
     pro4 = subprocess.run(['sudo', 'apt-get', 'purge', 'thunderbird', '-y'])
     pro5 = subprocess.run(['sudo', 'apt-get', 'remove', 'gnome-software', '-y'])
     pro6 = subprocess.run(['sudo', 'apt-get', 'purge', 'gnome-software', '-y'])
 
-    print(pro.returncode)
-    print(pro2.returncode)
     print(pro3.returncode)
     print(pro4.returncode)
     print(pro5.returncode)
     print(pro6.returncode)
 
  
-    if int(pro.returncode + pro2.returncode + pro3.returncode + pro4.returncode + pro5.returncode + pro6.returncode)==0:
+    if int(pro3.returncode + pro4.returncode + pro5.returncode + pro6.returncode)==0:
        print("###########################################################") 
        print("*        removing unnecessary tools was successful        *")
        print("###########################################################")
@@ -1936,25 +1879,20 @@ def aos_liquorix_commands():
 ##############################################################################################################################
 
 
-##############################
-# enable ufw && install gufw #
-##############################
+################
+# install gufw #
+################
+
 
   def ufw_commands():
-    pro = subprocess.run(['sudo', 'ufw', 'default', 'deny', 'incoming'])
-    pro2 = subprocess.run(['sudo', 'ufw', 'default', 'allow', 'outgoing'])
-    pro3 = subprocess.run(['sudo', 'ufw', 'enable'])
-    pro4 = subprocess.run(['sudo', 'apt-get', 'install', 'gufw', '-y'])
 
+    pro = subprocess.run(['sudo', 'apt-get', 'install', 'gufw', '-y'])
 
     print(pro.returncode)
-    print(pro2.returncode)
-    print(pro3.returncode)
-    print(pro4.returncode)
 
-    if int(pro.returncode + pro2.returncode + pro3.returncode + pro4.returncode)==0:
+    if int(pro.returncode)==0:
         print("########################################################") 
-        print("*               enable ufw was successful              *")
+        print("*               install gufw was successful            *")
         print("########################################################")
         print("")
         print("the program will continue the installation process in a few seconds, please wait ...")
@@ -2045,108 +1983,13 @@ def aos_liquorix_commands():
 ##############################################################################################################################
 
 
-#######################
-# Installing chromium #
-#######################
-
-  def chromium_commands():
-    pro = subprocess.run(['sudo', 'add-apt-repository', 'ppa:system76/pop', '-yy'])
-    pro2 = subprocess.run(['sudo', 'apt-get', 'update']) 
-    pro3 = subprocess.run(['sudo', 'apt-get', 'install', 'chromium', '-y'])
-
-    print(pro.returncode)
-    print(pro2.returncode)
-    print(pro3.returncode)
-
-    if int(pro.returncode + pro2.returncode + pro3.returncode)==0:
-        print("#########################################################") 
-        print("*    Installing chromium(DEB version) was successful    *")
-        print("#########################################################")
-        print("")
-        time.sleep(3)
-        rmfirefox = input("Do you want to remove firefox-browser ? [y/n]")  
-        if rmfirefox  == "y":
-          subprocess.run(['sudo', 'apt-get', 'remove', 'firefox', '-y'])
-          subprocess.run(['sudo', 'apt-get', 'purge', 'firefox', '-y'])
-        print("")
-        print("")
-        print("the program will continue the installation process in a few seconds, please wait ...")
-        time.sleep(3)
-
-    else:
-
-        print("###########################################################################") 
-        print("*                 warning: Installing chromium was failed                 *")
-        print("###########################################################################")
-        time.sleep(3)
-        print("")
-        loop = input("Do you want to try to installing chromium again? [y/n]")  
-        if loop  == "y":
-          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
-          chromium_commands()
-
-
-        else:
-
-                print("###############################################################################") 
-                print("*                  warning: installing chromium was failed                    *")
-                print("###############################################################################")
-                time.sleep(3)
-                print("")
-
-  chromium_commands()
-
-
-##############################################################################################################################
-##############################################################################################################################
-
-
-#############################
-#  autoclean && autoremove  #
-#############################
-
-
-  def autoclean_commands():
-    pro = subprocess.run(['sudo', 'apt-get', 'autoclean', '-y'])
-    pro2 = subprocess.run(['sudo', 'apt-get', 'auto-remove', '-y'])
-
-    print(pro.returncode)
-    print(pro2.returncode)
-
-    if int(pro.returncode + pro2.returncode)==0:
-       print("###########################################################") 
-       print("*         autoclean && autoremove was successful          *")
-       print("###########################################################")
-       print("")
-       print("the program will continue the installation process in a few seconds, please wait ...")
-       time.sleep(3)
-
-    else:
-
-       print("##############################################################################") 
-       print("*                warning: autoclean && autoremove was failed                 *")
-       print("##############################################################################")
-       time.sleep(3)
-       print("")
-       print("")
-       loop = input("Do you want to try to autoclean && autoremove again? [y/n]")  
-       if loop  == "y":
-        subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
-        autoclean_commands()
-            
-
-  autoclean_commands()
-
-
-##############################################################################################################################
-##############################################################################################################################
 
 aos_liquorix_commands()
 
 print("")
 print("For more details")
-print("#########################################")
-print("https://github.com/ramner98/LINUX-AOS.git")
-print("#########################################")
+print("#############################################")
+print("https://github.com/ramner98/linux-booster.git")
+print("#############################################")
 time.sleep(3)
 print("")
