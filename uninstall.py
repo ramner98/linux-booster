@@ -228,14 +228,16 @@ def unistallingaos_commands():
     pro3 = subprocess.run(['sudo', 'add-apt-repository', '--remove', 'ppa:linuxuprising/apps', '-yy'])
     pro4 = subprocess.run(['sudo', 'add-apt-repository', '--remove', 'ppa:system76/pop', '-yy'])
     pro5 = subprocess.run(['sudo', 'add-apt-repository', '--remove', 'ppa:fish-shell/release-3', '-yy'])
+    pro6 = subprocess.run(['sudo', 'add-apt-repository', '--remove', 'ppa:trebelnik-stefina/grub-customizer', '-yy'])
 
     print(pro.returncode)
     print(pro2.returncode)
     print(pro3.returncode)
     print(pro4.returncode)
     print(pro5.returncode)
+    print(pro6.returncode)
 
-    if int(pro.returncode + pro2.returncode + pro3.returncode + pro4.returncode + pro5.returncode)==0:
+    if int(pro.returncode + pro2.returncode + pro3.returncode + pro4.returncode + pro5.returncode + pro6.returncode)==0:
        print("############################################################") 
        print("*             unstalling aos_ppa was successful            *")
        print("############################################################")
@@ -309,52 +311,6 @@ def unistallingaos_commands():
 
 ############################################################################################################################
 ############################################################################################################################
-
-
-###################
-# remove chromium #
-###################
-
-
-  def rmchromium_commands():
-######### check if firefox is installed
-    pro = subprocess.run(['sudo', 'apt-get', 'update']) 
-    pro2 = subprocess.run(['sudo', 'apt-get', 'install', 'firefox', '-y'])
-    pro3 = subprocess.run(['apt-cache', 'policy', 'firefox'])
-    print(pro3.returncode)
-    
-    if int(pro3.returncode)==0:
-        print("#########################################################") 
-        print("*          firefox is installed in the system           *")
-        print("#########################################################")
-        print("")
-        time.sleep(3)
-        rmchromium = input("Do you want to remove chromium ? [y/n]")  
-        if rmchromium  == "y":
-          subprocess.run(['sudo', 'apt-get', 'remove', 'chromium', '-y'])
-          subprocess.run(['sudo', 'apt-get', 'purge', 'chromium', '-y'])
-        print("")
-        print("")
-        print("the program will continue the installation process in a few seconds, please wait ...")
-        time.sleep(3)
-
-    else:
-
-        print("###########################################################################") 
-        print("*             warning: firefox is not installed in the system             *")
-        print("###########################################################################")
-        time.sleep(3)
-        print("")
-        print("If you choose, *no* ,the program will continue without removing chromium")
-        print("so that there will be no situation where you will be left without a browser.")
-        print("")
-        loop = input("Do you want to try installing firefox before you remove chromium [y/n] ?")
-        if loop  == "y":
-          subprocess.run(['sudo', 'bash', 'scripts/fix.sh'])
-          rmchromium_commands()
-
-
-  rmchromium_commands()
 
 
 ####################
@@ -448,8 +404,8 @@ unistallingaos_commands()
 
 print("")
 print("For more details")
-print("#########################################")
-print("https://github.com/ramner98/LINUX-AOS.git")
-print("#########################################")
+print("#############################################")
+print("https://github.com/ramner98/linux-booster.git")
+print("#############################################")
 time.sleep(3)
 print("")
